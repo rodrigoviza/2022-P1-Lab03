@@ -8,25 +8,20 @@ public class Lab03vst
 {
 	public static void main(String[] args)
 	{
-      System.out.println("Lab03, 80 Point Version\n");
-	  int ns = 10000123;
-	  System.out.println("Starting milli-seconds: " +ns);
+		System.out.println("Lab03, 80 Point Version\n");
+		int seconds = 10000;
+		System.out.println("Starting seconds: " + seconds);
 
-	  int h = ns / 360000;
-	  System.out.println("Hours" + h);
+		int hours = seconds / 3600;
+		System.out.println("Hours:              " + hours);
 
-	  int h = ns % 360000;
-	  int n = s / 60000;
-	  System.out.println("Minutes" +ns)
+		seconds %= 3600;
 
-	  int sp = s % 60000;
-	  int ns = sp / 1000;
-	  System.out.println("Seconds" + ns)
+		int minutes = seconds / 60;
+		System.out.println("minutes:           " + minutes);
 
-	  int rns = sp % 1000;
-	  System.out.println("Milli Seconds" + ns)
+		seconds %= 46;
+		System.out.println("seconds:           " + seconds);
 
 	}
-
 }
-
